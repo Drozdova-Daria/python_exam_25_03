@@ -13,12 +13,11 @@ class Case:
 
 
 TEST_CASES = [
-    Case(name='basis', expected='Hello World'
+    Case(name='basis', expected='Hello World')
 ]
 
 
 @pytest.mark.parametrize('test_case', TEST_CASES, ids=str)
 def test_hello_world(test_case: Case) -> None:
     answer = hello()
-)
-    assert answer == test_case.expected
+assert answer == test_case.expected
