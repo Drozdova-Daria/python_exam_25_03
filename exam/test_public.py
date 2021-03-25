@@ -1,6 +1,6 @@
 import pytest
 
-from main import hello
+from main import words
 
 
 class Case:
