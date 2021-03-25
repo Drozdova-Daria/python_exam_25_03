@@ -62,10 +62,10 @@ def get_str(offer):
 def snoop_says(file_name, n):
     language = words(file_name)
     d = transition_matrix(language)
-    print(d)
     offer = markov_chain(language, d, n)
     return get_str(offer)
 
 
 file_name = 'snoop279.txt'
-print(snoop_says(file_name, 10))
+length = 10
+print(snoop_says(file_name, length))
